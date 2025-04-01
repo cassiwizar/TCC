@@ -10,7 +10,7 @@ import '@xyflow/react/dist/style.css';
 import TextUpdaterNode from './TextUpdaterNode';
  
 const rfStyle = {
-  backgroundColor: '#B8CEFF',
+  backgroundColor: '#EBECEC',
 };
  
 const initialNodes = [

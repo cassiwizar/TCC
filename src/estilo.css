@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+}
+.reto {
+    background: rgb(147,112,219);
+    background: linear-gradient(90deg, rgba(147,112,219,0.7) 0%, rgba(124,169,241,0.7) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 10px;
+    height: 50px;
+    position: relative;
+}
+.robo {
+    width: 70px;
+    height: auto;
+    position:absolute; 
+    left: 10px; 
+    margin: 5px;
+    justify-content: center;
+}
+
+.reto h1 {
+    color: white;
+    text-align: center;
+    font-family:"Poppins";
+    font-size: 30px;
+}
+.sos {
+    display: flex; 
+}
+.sidebar {
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    background-color: gray; 
+    width: 200px;
+    height: 750px; 
+}
