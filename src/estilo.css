@@ -32,8 +32,7 @@
 .sidebar {
     display: flex;
     align-items:center;
-    background-color: #783FBD;
-    opacity: 0.15; 
+    background-color: rgb(120, 63, 189,0.15);
     width: 350px;
     height: 750px; 
     flex-direction: column;
@@ -43,7 +42,7 @@
     height: 55px;
     width: 210px;
     background-color: #4980FA;
- 
+    opacity: 0.34;
     border-radius: 20px;
     border: 1px solid black;
     margin-top: 35px;
