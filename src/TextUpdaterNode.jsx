@@ -2,10 +2,8 @@
 import { useCallback } from 'react';
 import { Background, Handle, Position } from '@xyflow/react';
  
-const handleStyle = { left: 10 };
-
 const nodeStyle = {
- padding: '10px',
+  padding: '10px',
   background: 'white',
   border: '1px solid #ccc',
   borderRadius: '15px',
@@ -13,7 +11,7 @@ const nodeStyle = {
   boxShadow: '0 2px 5px rgba(0, 0, 0, 0.1)',
   fontFamily: 'sans-serif',
   fontSize: '14px',
-  paddingBottom: '20px',
+  paddingBottom: '25px',
 };
 const labelStyle = {
   display: 'block',
@@ -50,9 +48,8 @@ function TextUpdaterNode({ data, isConnectable }) {
       </div>
       <Handle
         type="source"
-        position={Position.Bottom}
+        position={Position.Right}
         id="a"
-        style={handleStyle}
         isConnectable={isConnectable}
       />
       <Handle

@@ -23,7 +23,19 @@ const initialNodes = [
     data: { value: 123 },
   },
   {
-    id: 'node-12',
+    id: 'node-2',
+    type: 'textUpdater',
+    position: { x: -500, y: 0 },
+    data: { value: 123 },
+  },
+  {
+    id: 'node-3',
+    type: 'textUpdater',
+    position: { x: 0, y: 100 },
+    data: { value: 123 },
+  },
+  {
+    id: 'node-4',
     type: 'textUpdater',
     position: { x: 0, y: 200 },
     data: { value: 123 },
