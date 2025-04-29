@@ -11,6 +11,8 @@ import TextUpdaterNode from './TextUpdaterNode';
  
 const rfStyle = {
   backgroundColor: '#EBECEC',
+  backgroundImage: "radial-gradient(#bbb 1px, transparent 1px)",
+  backgroundSize: "20px 20px",
 };
  
 const initialNodes = [
