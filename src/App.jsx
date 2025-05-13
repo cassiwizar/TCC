@@ -16,23 +16,12 @@ const rfStyle = {
   backgroundSize: '20px 20px',
 };
 
+
 const initialNodes = [
   {
     id: 'node-1',
     type: 'textUpdater',
     position: { x: 250, y: 5 },
-    data: { value: 123 },
-  },
-  {
-    id: 'node-2',
-    type: 'textUpdater',
-    position: { x: 210, y: 51 },
-    data: { value: 123 },
-  },
-  {
-    id: 'node-3',
-    type: 'textUpdater',
-    position: { x: 220, y: 123 },
     data: { value: 123 },
   },
 ];
@@ -98,7 +87,7 @@ function FlowCanvas() {
     const newNode = {
       id: `node-${+new Date()}`, // ID único baseado no timestamp
       type: 'textUpdater', // Tipo do nó
-      position: { x: Math.random() * 400, y: Math.random() * 400 }, // Posição aleatória
+      position: { x: Math.random() * 40, y: Math.random() * 40 }, // Posição aleatória
       data: { value: 'Novo bloco' }, // Dados do nó
     };
 
@@ -110,23 +99,25 @@ function FlowCanvas() {
       {/* Barra lateral */}
       <aside
         style={{
-          width: '250px',
-          background: '#2c3e50',
-          color: 'white',
+          width: '205px',
+          background: '#D9C6F8',
+          color: 'black',
           padding: '1rem',
+          opacity: '75%'
         }}
       >
         <button
-          onClick={addNode} // Chama a função ao clicar
+          onClick={addNode}
           style={{
             padding: '0.5rem',
-            background: '#1abc9c',
-            borderRadius: '4px',
+            background: '#FFF',
+            borderRadius: '15px',
             cursor: 'pointer',
-            color: 'white',
-            fontWeight: 'bold',
-            border: 'none',
+            color: 'black', // Força a cor do texto para preto
+            fontWeight: 'bolder',
             width: '100%',
+            border: '1px solid #9370DB',
+            textAlign: 'center', // Adiciona alinhamento centralizado, caso necessário
           }}
         >
           + Criar Bloco
