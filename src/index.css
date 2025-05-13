@@ -1,24 +1,25 @@
-html,
-body {
+html, body {
   margin: 0;
-  font-family: sans-serif;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
 }
- 
-#app {
-  width: 100vw;
+
+.page-container {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
 }
- 
-.text-updater-node {
-  height: 50px;
-  border: 1px solid #eee;
-  padding: 5px;
-  border-radius: 5px;
-  background: white;
+
+.reto {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #b185f6, #a5d8ff);
+  color: white;
+  height: 70px;
 }
- 
-.text-updater-node label {
-  display: block;
-  color: #777;
-  font-size: 12px;
+
+#app {
+  flex: 1;
+  height: 100%;
 }
