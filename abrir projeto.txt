@@ -1,0 +1,5 @@
+Abrir projeto:
+entra no projeto
+npm install
+npm audit fix (se precisar)
+npm run dev
