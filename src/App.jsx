@@ -38,7 +38,7 @@ const initialNodes = [
   {
     id: 'node-4',
     type: 'textUpdater',
-    position: { x: 213, y: 10 },
+    position: { x: 213, y: 5 },
     data: { value: 123 },
   },
 ];
