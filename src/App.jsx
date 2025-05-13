@@ -35,12 +35,6 @@ const initialNodes = [
     position: { x: 220, y: 123 },
     data: { value: 123 },
   },
-  {
-    id: 'node-4',
-    type: 'textUpdater',
-    position: { x: 213, y: 5 },
-    data: { value: 123 },
-  },
 ];
 
 const nodeTypes = { textUpdater: TextUpdaterNode };
@@ -99,6 +93,18 @@ function FlowCanvas() {
     [project],
   );
 
+  // Função para adicionar um novo nó ao clicar no botão
+  const addNode = () => {
+    const newNode = {
+      id: `node-${+new Date()}`, // ID único baseado no timestamp
+      type: 'textUpdater', // Tipo do nó
+      position: { x: Math.random() * 400, y: Math.random() * 400 }, // Posição aleatória
+      data: { value: 'Novo bloco' }, // Dados do nó
+    };
+
+    setNodes((nds) => [...nds, newNode]); // Adiciona o novo nó ao estado
+  };
+
   return (
     <div style={{ display: 'flex', height: '100vh' }}>
       {/* Barra lateral */}
@@ -110,22 +116,21 @@ function FlowCanvas() {
           padding: '1rem',
         }}
       >
-        <div
-          onDragStart={(event) => {
-            event.dataTransfer.setData('application/reactflow', 'textUpdater');
-            event.dataTransfer.effectAllowed = 'move';
-          }}
-          draggable
+        <button
+          onClick={addNode} // Chama a função ao clicar
           style={{
             padding: '0.5rem',
             background: '#1abc9c',
             borderRadius: '4px',
-            cursor: 'grab',
-            userSelect: 'none',
+            cursor: 'pointer',
+            color: 'white',
+            fontWeight: 'bold',
+            border: 'none',
+            width: '100%',
           }}
         >
-          + Bloco
-        </div>
+          + Criar Bloco
+        </button>
       </aside>
 
       {/* Canvas do React Flow */}
