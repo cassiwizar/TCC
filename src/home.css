@@ -14,6 +14,8 @@ body {
     height: 650px;
     border-radius: 30px;
     background: linear-gradient(to bottom, #dccdf5, #dbeaf9);
+    border-spacing: 5px;
+    border: .5px solid #9370DB;
 }
 
 .robo {
@@ -21,6 +23,15 @@ body {
     height: auto;
     position: absolute;
     left: 10px;
+    margin: 5px;
+    justify-content: center;
+}
+
+.icone {
+    width: 46px;
+    height: auto;
+    position: absolute;
+    right: 10px;
     margin: 5px;
     justify-content: center;
 }
@@ -37,4 +48,32 @@ h1 {
     text-align: center;
     font-family: "Poppins";
     font-size: 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.gridR,
+.gridL {
+    display: grid;
+    height: 450px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    color: #FFF;
+}
+
+p {
+    font-size: 32px;
+}
+
+.soma {
+    font-size: 34px;
+}
+
+.bloco-projeto {
+    
 }
