@@ -14,6 +14,7 @@ const rfStyle = {
   backgroundColor: '#EBECEC',
   backgroundImage: 'radial-gradient(#bbb 1px, transparent 1px)',
   backgroundSize: '20px 20px',
+  
 };
 
 
@@ -113,11 +114,11 @@ function FlowCanvas() {
             background: '#FFF',
             borderRadius: '15px',
             cursor: 'pointer',
-            color: 'black', // Força a cor do texto para preto
+            color: 'black', 
             fontWeight: 'bolder',
             width: '100%',
             border: '1px solid #9370DB',
-            textAlign: 'center', // Adiciona alinhamento centralizado, caso necessário
+            textAlign: 'center', 
           }}
         >
           + Criar Bloco
