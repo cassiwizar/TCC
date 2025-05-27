@@ -1,0 +1,210 @@
+
+body {
+    background: linear-gradient(180deg,rgba(152, 183, 251, 1) 0%, rgba(147, 112, 219, 1) 100%);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    background-color: #fff;
+    padding: 0px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 1045px;
+    height: 541px;
+    margin: 0px;
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+  }
+
+  .left {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 541px;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+
+.right {
+    flex: 1;
+    background: white;
+}
+.form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.email{
+    width: 80%;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #c49bff, #add8ff); 
+    color: white;
+    font-size: 16px;
+    outline: none;
+    caret-color: rgb(174, 0, 255);
+}
+.email::placeholder{
+    color: rgba(0, 0, 0, 0.4);
+
+}
+
+input[type="email"]:focus {
+    outline: none;
+    border-top: none;
+    border-left: none;
+   border-right: none;
+    box-shadow: none; 
+}
+.texto2, .texto1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: #783FBD;
+    margin-bottom: 10px;
+    text-align: left;
+    width: 85%;
+    font-size: 20px;
+}
+.senha{
+    width: 80%;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #c49bff, #add8ff); 
+    color: white;
+    font-size: 16px;
+    outline: none;
+    caret-color: rgb(174, 0, 255);
+}
+.senha::placeholder{
+    color: #B0D7AE;
+}
+
+input[type="password"]:focus {
+    outline: none;
+    border-top: none;
+    border-left: none;
+   border-right: none;
+    box-shadow: none; 
+}
+.botao {
+    color: white;
+    font-size: 20px;
+    font-family: "Inter";
+    border: none;
+    border-radius: 15px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    display: block;
+    width: 85%;
+    background: linear-gradient(90deg, #c49bff, #add8ff); 
+}
+.botao:hover {
+    background: #A0C7A0;
+    transition: 0.5s;
+    background: linear-gradient(90deg, #b48cec, #91bbe1); 
+
+}
+img {
+    width: 150px;
+    height: 170px;
+    margin-bottom: 20px;
+}
+h1 {
+    color: #783FBD;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .decoracao {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .left {
+    flex: 1;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: white;
+  }
+  
+  .decoracao {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .forma {
+    position: absolute;
+    background: linear-gradient(135deg, #b88bff, #81b4ff);
+    border-radius: 60px;
+    opacity: 0.8;
+  }
+  
+  /* Cilindros grandes e inclinados */
+  .forma1 {
+    width: 280px;
+    height: 100px;
+    top: 10px;
+    left: -80px;
+    transform: rotate(45deg);
+  }
+  
+  .forma2 {
+    width: 320px;
+    height: 120px;
+    top: 120px;
+    left: -220px;
+    transform: rotate(45deg);
+  }
+  
+  .forma3 {
+    width: 240px;
+    height: 80px;
+    top: 240px;
+    left: -50px;
+    transform: rotate(45deg);
+  }
+  
+  .forma4 {
+    width: 160px;
+    height: 160px;
+    bottom: -90px;
+    left: 20px;
+    border-radius: 50%;
+  }
+  .username{
+    width: 80%;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #c49bff, #add8ff); 
+    color: white;
+    font-size: 16px;
+    outline: none;
+    caret-color: rgb(174, 0, 255);
+}
