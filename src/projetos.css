@@ -1,0 +1,113 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f0f0f0;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloco {
+    width: 1250px;
+    height: 650px;
+    border-radius: 30px;
+    background: linear-gradient(to bottom, #dccdf5, #dbeaf9);
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    position: relative;
+    padding: 0 20px;
+}
+
+.numero-projetos {
+    font-size: 60px;
+    font-weight: 700;
+    color: white;
+    margin-right: 15px;
+}
+
+h1 {
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.right-icons {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-left: auto;
+}
+
+.robo {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.casa,
+.usuario {
+    width: 40px;
+    height: auto;
+    margin-left: 0;
+    margin: 20px;
+}
+
+.projetos-container {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+
+.projeto {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 175px;
+    height: 175px;
+}
+
+.projeto h2 {
+    margin: 0;
+    color: #783FBD;
+    font-size: 18px;
+}
+
+.projeto p {
+    margin: 5px 0 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.robo.floating {
+    animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+
+    0%,
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    50% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+}

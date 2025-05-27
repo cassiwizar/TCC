@@ -20,6 +20,7 @@ function verificarSeguranca(senha) {
 
 function validarEmail() {
     let email = document.getElementById("email").value;
+    
     let regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
 
     if (!email) {
@@ -39,11 +40,13 @@ function validarSenha() {
     let senha = document.getElementById("senha").value;
     let resultadoSenha = verificarSeguranca(senha);
     let resultadoEmail = validarEmail();
+    let usuario = document.getElementById("username").value;
 
     if (resultadoSenha === "Conta criada" && resultadoEmail === "E-mail válido!") {
-        alert("Conta criada com sucesso!");
+        alert("Conta criada com sucesso, Bem-Vindo " + usuario);
         document.getElementById("email").value = "";
         document.getElementById("senha").value = "";
+        window.location.href='projetos.html'
     } else {
         alert(resultadoSenha !== "Conta criada" ? resultadoSenha : resultadoEmail);
     }

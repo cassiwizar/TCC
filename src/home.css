@@ -50,6 +50,10 @@ h1 {
     font-size: 30px;
 }
 
+a{
+    text-align: none;
+}
+
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -66,6 +70,10 @@ h1 {
     color: #FFF;
 }
 
+.icone {
+    cursor: pointer;
+}
+
 p {
     font-size: 32px;
 }
@@ -74,6 +82,50 @@ p {
     font-size: 34px;
 }
 
-.bloco-projeto {
-    
+.novo-projeto {
+    color: white;
+    font-size: 20px;
+    font-family: "Inter";
+    border: none;
+    border-radius: 15px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    display: block;
+    width: 45%;
+    background: linear-gradient(90deg, #c49bff, #add8ff);
+}
+
+.meus-projetos {
+    color: white;
+    font-size: 20px;
+    font-family: "Inter";
+    border: none;
+    border-radius: 15px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    display: block;
+    width: 45%;
+    background: linear-gradient(90deg, #c49bff, #add8ff);
+}
+
+
+.bloco-projeto:hover {
+    animation: floating 3s ease-in-out infinite;
+    background: #A0C7A0;
+    transition: 0.5s;
+    background: linear-gradient(90deg, #b48cec, #91bbe1);
+}
+
+@keyframes floating {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
 }
