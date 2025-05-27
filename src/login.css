@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(#98B7FB, #9370DB) no-repeat center;
+    width: auto;
+    height: auto;
+    margin: 30px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #FFF;
+}
+
+
+
+.gridRight{
+
+}
+
+input {
+    background: linear-gradient(#9370DB, #8B9FEE);
+    opacity: 60%;
+    border: none;
+    border-radius: 15px;
+    display: block;
+    padding-inline: 30px;
+}
+
+.divBotao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seta{
+    background: linear-gradient(#9370DB, #8B9FEE);
+    border: none;
+    border-radius: 30px;
+    padding-inline: 20px;
+}

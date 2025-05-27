@@ -6,33 +6,35 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-   
+
 }
+
 .bloco {
     width: 1250px;
     height: 650px;
     border-radius: 30px;
     background: linear-gradient(to bottom, #dccdf5, #dbeaf9);
 }
-.robo{
+
+.robo {
     width: 70px;
     height: auto;
-    position:absolute; 
-    left: 10px; 
+    position: absolute;
+    left: 10px;
     margin: 5px;
     justify-content: center;
-    }
+}
 
-    .container {
-        display: flex;
-        align-items: center;
-        justify-content: center; 
-        position: relative;
-            }
-    
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
 h1 {
     color: white;
     text-align: center;
-    font-family:"Poppins";
+    font-family: "Poppins";
     font-size: 30px;
-    }
+}
