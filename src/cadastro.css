@@ -13,7 +13,7 @@ body {
 .container {
   background-color: #fff;
   padding: 0px;
-  border-radius: 8px;
+  border-radius: 50px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 1045px;
   height: 541px;
@@ -249,7 +249,7 @@ h1 {
 }
 
 
-.username, .email {
+.username{
   width: 80%;
   padding: 10px 16px;
   border: none;

@@ -32,8 +32,10 @@ body {
     height: auto;
     position: absolute;
     right: 10px;
-    margin: 5px;
+    margin: 0px;
     justify-content: center;
+    cursor: pointer;
+    bottom: 20px;
 }
 
 .container {
@@ -70,12 +72,9 @@ a{
     color: #FFF;
 }
 
-.icone {
-    cursor: pointer;
-}
-
 p {
     font-size: 32px;
+    font-family: "Poppins", sans-serif;
 }
 
 .soma {
