@@ -23,3 +23,12 @@ html, body {
   flex: 1;
   height: 100%;
 }
+.usuario{
+  width: 46px;
+    height: auto;
+    position: absolute;
+    right: 10px;
+    margin: 5px;
+    justify-content: center;
+    bottom: 3px;
+}
